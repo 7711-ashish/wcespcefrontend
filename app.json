@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "my-app",
+    "slug": "my-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/wce.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/wce.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/wce.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.ashish_7711.myapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "814b95a9-b9fc-4569-8dbe-fbbbdc8bf833"
+      }
+    }
+  }
+}
