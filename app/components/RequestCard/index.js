@@ -35,7 +35,7 @@ export default function RequestCard(props) {
                     </View>
                     <View>
                         <Text style={styles.heading}>Applicant:</Text>
-                        <Text>{props.applicant}</Text>
+                        <Text>{props.club}</Text>
                     </View>
                 </View>
                 <View style={styles.icon}>
