@@ -29,7 +29,7 @@ const HistoryCard = (props) => {
 
             <View style={styles.buttonrow}>
                 <View style={styles.department}>
-                    <Text style={styles.subheading}>Aplicant :</Text>
+                    <Text style={styles.subheading}>Applicant :</Text>
                     <Text style={styles.subheading}>{props.applicant}</Text>
                 </View>
             </View>
