@@ -44,7 +44,7 @@ export default function Drawer() {
   const { user } = useAuth();
   return (
     <>
-      <NavigationContainer>
+      <NavigationContainer independent={true}>
         <AppDrawer.Navigator
           drawerContent={(props) => <Sidebar {...props} />}
           screenOptions={{

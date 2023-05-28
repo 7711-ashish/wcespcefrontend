@@ -20,6 +20,8 @@ import authStorage from './app/auth/storage';
 import * as SplashScreen from 'expo-splash-screen';
 import * as Network from 'expo-network';
 import InternetError from "./app/animations/InternetError";
+import { NavigationContainer } from '@react-navigation/native';
+
 
 
 export default function App() {
@@ -86,6 +88,7 @@ export default function App() {
 
 
   return (
+    <NavigationContainer>
     <View style={styles.container}>
       {user ? (
 
@@ -112,6 +115,7 @@ export default function App() {
       {/* <ResourceList /> */}
       {/* <QRCode /> */}
     </View>
+    </NavigationContainer>
   );
 }
 
