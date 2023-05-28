@@ -1,4 +1,4 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image, StyleSheet } from 'react-native'
 import React from 'react'
 
 const Home = () => {
@@ -12,6 +12,7 @@ const Home = () => {
       <Image source={require("../images/wce.jpg")} style={{
         width: 200,
         height: 200,
+        marginTop: 60,
       }} />
       <View style={{
         flexDirection: "row",
@@ -20,11 +21,61 @@ const Home = () => {
         <Text style={{
           fontSize: 20,
           fontWeight: "bold",
-          color: "black"
+          color: "black",
+          marginBottom: 0
         }}>Welcome to WCE Space</Text>
       </View>
+
+      <View style={styles.buttonContainer}>
+        <View style={styles.rowContainer}>
+          <Button title="Admin Login" buttonStyle={styles.adminButton} onPress={handleResourceLoginPress}/>
+          <Button title="Dean Student Login" buttonStyle={styles.deanButton} />
+        </View>
+
+        <View style={styles.rowC/ontainer}>
+          <Button title="Resource Owner Login" buttonStyle={styles.resourceButton}/>
+          <Button title="Advisor Login" buttonStyle={styles.advisorButton} />
+        </View>
+
+        <View style={styles.rowContainer}>
+          <Button title="Representative Login" />
+        </View>
+      </View>
+
+
     </View>
   )
+  
 }
+
+const styles = StyleSheet.create({
+  buttonContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 0
+  },
+  rowContainer: {
+    flexDirection: 'row',
+    marginBottom: 10,
+  },
+  adminButton: {
+    backgroundColor: 'orange',
+    marginRight: 10,
+  },
+  deanButton: {
+    backgroundColor: '#3b7ddd',
+    marginRight: 10,
+  },
+  resourceButton: {
+    backgroundColor: '#dc3545',
+    marginRight: 10,
+  },
+  advisorButton: {
+    backgroundColor: '#006666',
+    marginRight: 10,
+  },
+});
+
 
 export default Home
