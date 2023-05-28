@@ -28,17 +28,17 @@ const Home = () => {
 
       <View style={styles.buttonContainer}>
         <View style={styles.rowContainer}>
-          <Button title="Admin Login" buttonStyle={styles.adminButton} onPress={handleResourceLoginPress}/>
-          <Button title="Dean Student Login" buttonStyle={styles.deanButton} />
+          <Button title="Admin Login" buttonStyle={styles.adminButton} onPress={() => navigation.navigate('Login')}/>
+          <Button title="Dean Student Login" buttonStyle={styles.deanButton} onPress={() => navigation.navigate('Login')} />
         </View>
 
         <View style={styles.rowC/ontainer}>
-          <Button title="Resource Owner Login" buttonStyle={styles.resourceButton}/>
-          <Button title="Advisor Login" buttonStyle={styles.advisorButton} />
+          <Button title="Resource Owner Login" buttonStyle={styles.resourceButton} onPress={() => navigation.navigate('Login')}/>
+          <Button title="Advisor Login" buttonStyle={styles.advisorButton} onPress={() => navigation.navigate('Login')}/>
         </View>
 
         <View style={styles.rowContainer}>
-          <Button title="Representative Login" />
+          <Button title="Representative Login" onPress={() => navigation.navigate('Login')} />
         </View>
       </View>
 
