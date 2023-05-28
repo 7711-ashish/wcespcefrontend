@@ -6,6 +6,7 @@ import MakeRequest from './app/screens/MakeRequest';
 import ViewRequest from './app/screens/ViewRequest';
 import AllRequests from "./app/screens/AllRequests";
 import Drawer from "./app/navigation/Drawer";
+import Homestack from "./app/navigation/Homestack"
 import AddRemarks from "./app/screens/AddRemarks";
 import UserProfile from "./app/screens/UserProfile";
 import { statusbar } from "./app/configs/variables";
@@ -94,7 +95,7 @@ export default function App() {
       ) : (
 
         <AuthContext.Provider value={{ user, setUser }}>
-          <Login />
+          <Homestack />
         </AuthContext.Provider>
       )}
 
